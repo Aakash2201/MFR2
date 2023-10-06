@@ -64,7 +64,9 @@
             // Calculate the endpoint of the line
             const endX = centerX + lineLength * Math.cos(targetAngle * (Math.PI / 180));
             const endY = centerY + lineLength * Math.sin(targetAngle * (Math.PI / 180));
-    
+
+            context.lineWidth = 2.5;
+            
             // Draw the line
             context.beginPath();
             context.moveTo(centerX, centerY);
