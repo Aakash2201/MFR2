@@ -86,6 +86,7 @@
         // Event listener for the "Set Angle" button
         setAngleButton.addEventListener("click", function () {
             const angle = parseFloat(angleInput.value);
+            angle = angle % 360;
             setAngle(angle);
         });
     
